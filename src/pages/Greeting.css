@@ -1,0 +1,25 @@
+/* div.greeting {
+    font-size: 1em;
+    color: #333;
+    padding: 5rem 3rem;
+    background-image: url('/greeting.jpg');
+} */
+
+.greeting p {
+   
+    padding: 3rem 1rem;
+}
+
+div.greeting {
+    font-size: 1em;
+    color: #080a08;
+    padding: 3rem 3rem;
+    /* background-image: url('../../public/greeting.jpg');
+    background-size: cover;
+    opacity: 0.8; */
+    background-color: #91a8a140
+}
+
+.greeting h1 {
+    padding-top: 2rem;
+}

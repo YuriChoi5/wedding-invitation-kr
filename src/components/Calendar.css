@@ -1,0 +1,62 @@
+.calendar {
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    background-color: rgb(246, 247, 245);
+
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th {
+    padding: 10px;
+    text-align: center;
+    color: #213e0b;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: center;
+    color: #213e0b;
+  }
+  
+  .day {
+    padding: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+  }
+/*   
+  .first-day {
+    position: relative;
+  }
+   */
+  .day.first-day {
+    background: rgb(206, 227, 203);
+    padding: 15px;
+    color: aliceblue;
+  }
+  
+  .first-day .time-text {
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .8rem;
+    font-weight: bold;
+    color: #213e0b;
+  }
+  
+h2 {
+    font-size: 1rem;
+    color: #213e0b;
+    padding-top: 3rem;
+}
+
+.calendar h1 {
+    /* font-size: 1.5rem; */
+    padding-bottom: 1.5rem;
+}

@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: "Gowun Batang", serif;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  /* background-color: rgb(243, 243, 242); */
+  /* background-color: rgb(244, 245, 195); */
+
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 1.3rem;
+  color: rgb(1, 58, 39);
 }

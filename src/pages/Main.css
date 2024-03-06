@@ -1,0 +1,41 @@
+div {
+  font-size: 1.2rem;
+}
+
+.main-component {
+  /* border: 2px solid #c31c11; */
+  background-color: rgb(246, 247, 245);
+  padding-bottom: 3rem;
+}
+
+.main-img {
+  /* position: relative; */
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-text-box{
+  /* position: absolute;
+  z-index: 10;
+  top: 300px; */
+  /* border: 2px solid #274d04; */
+  padding: 1rem 0;
+  width: 100%;
+}
+
+
+.main-name {
+  font-size: 1.5em;
+  /* font-weight: bold; */
+  /* font-family: "Pacifico", cursive;; */
+  color: #2d4f44;
+  /* padding: 0 2rem 2rem 2rem; */
+  padding: .6rem;
+}
+
+.main-time, .main-place {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2d4f44;
+  padding: 0rem 1rem;
+}
