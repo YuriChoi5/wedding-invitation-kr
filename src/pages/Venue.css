@@ -1,0 +1,64 @@
+/* Venue.css */
+.venue-container {
+  padding: 5rem 3rem;
+  /* background-color: rgb(246, 247, 245); */
+  background-color: #91a8a140;
+}
+
+.venue-container h1 {
+  padding-bottom: 2rem;
+}
+
+.address {
+  padding: 0 2rem;
+  font-size: 1.3rem;
+}
+
+.address button {
+  padding: 0.5rem 1rem;
+  margin-bottom: 5rem;
+  border: 2px solid whitesmoke;
+  background-color: whitesmoke;
+  color: rgb(1, 58, 39);
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.contact {
+}
+
+.contact button {
+  border: none;
+  background-color: transparent;
+}
+
+.directions {
+  margin-top: 20px;
+}
+
+.directions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.directions li {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  /* display: flex; */
+}
+
+li div {
+  display: flex;
+  border-bottom: 2px solid rgb(1 58 39 / 44%);
+  padding-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+li p {
+  text-align: start;
+  padding: 0.8rem;
+}
