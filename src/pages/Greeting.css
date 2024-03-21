@@ -1,19 +1,14 @@
-
-.greeting p {
-   
-    padding: 3rem 1rem;
+div.greeting {
+  font-size: 1em;
+  color: #343434;
+  padding: 3rem 0rem;
+  background-color: #91a8a140;
 }
 
-div.greeting {
-    font-size: 1em;
-    color: #080a08;
-    padding: 3rem 3rem;
-    /* background-image: url('../../public/greeting.jpg');
-    background-size: cover;
-    opacity: 0.8; */
-    background-color: #91a8a140
+.greeting p {
+  padding: 3rem 3rem;
 }
 
 .greeting h1 {
-    padding-top: 2rem;
+  padding: 2rem 0.5rem 1rem 0.5rem;
 }

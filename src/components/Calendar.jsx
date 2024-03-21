@@ -42,9 +42,9 @@ const Calendar = () => {
                         className={`day ${dayNumber === 1 ? "first-day" : ""}`}
                       >
                         {dayNumber}
-                        {dayNumber === 1 && (
+                        {/* {dayNumber === 1 && (
                           <div className="time-text">5:30pm</div>
-                        )}
+                        )} */}
                       </div>
                     )}
                   </td>

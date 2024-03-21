@@ -54,6 +54,10 @@
 // Venue.js
 import React from "react";
 import "./Venue.css";
+import { VscCallOutgoing } from "react-icons/vsc";
+import { FaTrainSubway } from "react-icons/fa6";
+import { FaBusAlt } from "react-icons/fa";
+import { FaCar } from "react-icons/fa6";
 
 const Venue = () => {
   const phoneNumber = "0317030116";
@@ -66,21 +70,23 @@ const Venue = () => {
       <h1>오시는길</h1>
 
       <div className="address">
-        경기도 성남시 분당구 판교역로 226번길 16(삼평동) 
+        경기도 성남시 분당구 판교역로 226번길 16(삼평동)
         <br />
         {/* <button>주소 복사</button> */}
         <div className="contact">
           031-703-0116
-          <button onClick={handleCallClick}>&#128222;</button>
+          <button onClick={handleCallClick}>
+            <VscCallOutgoing />
+          </button>
         </div>
         <button>주소 복사</button>
-
       </div>
 
       <div className="directions">
         <ul>
           <li>
             <div>
+            <FaTrainSubway />
               지하철
               <span>신분당선</span>
             </div>
@@ -92,7 +98,7 @@ const Venue = () => {
           </li>
 
           <li>
-            <div>버스</div>
+            <div><FaBusAlt />버스</div>
             <p>
               390번: 동안교 하차
               <br />
@@ -103,7 +109,7 @@ const Venue = () => {
           </li>
 
           <li>
-            <div>자가용</div>
+            <div><FaCar />자가용</div>
             <p>
               경부고속도로 판교IC(톨게이트) 차출 후 좌회전, 약 700m 직진하여
               사거리에서 우회전 (SK 주유소 뒤)
