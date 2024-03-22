@@ -54,6 +54,7 @@
   height: 15rem;
   text-align: center;
   position: relative;
+  
 }
 
 .modal-close {
@@ -70,13 +71,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  padding: .5rem 0;
+  margin: 0 auto;
+  width: 12rem;
+  border: 1px solid #c8dabb;
 }
 
-.contact-box > div:first-child {
-  background-color: rgb(34, 75, 61);
+.contact-box > span:first-child {
+  background-color:#c8dabb;
+  color: #575757;
   padding: .5rem;
+  margin-right: .5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
+  /* width: 1.2rem; */
+}
+
+.contact-box button {
+  color: #575757;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #213e0b;
+  padding-top: 3rem;
 }

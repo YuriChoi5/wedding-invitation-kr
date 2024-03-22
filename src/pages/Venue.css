@@ -29,7 +29,7 @@
 .contact {
 }
 
-.contact button {
+.contact > button {
   border: none;
   background-color: transparent;
 }

@@ -86,8 +86,10 @@ const Venue = () => {
         <ul>
           <li>
             <div>
-            <FaTrainSubway />
-              지하철
+              <span>
+                <FaTrainSubway />
+              </span>
+              <span>지하철</span>
               <span>신분당선</span>
             </div>
             <p>
@@ -98,7 +100,12 @@ const Venue = () => {
           </li>
 
           <li>
-            <div><FaBusAlt />버스</div>
+            <div>
+              <span>
+                <FaBusAlt />
+              </span>
+              <span>버스</span>
+            </div>
             <p>
               390번: 동안교 하차
               <br />
@@ -109,7 +116,12 @@ const Venue = () => {
           </li>
 
           <li>
-            <div><FaCar />자가용</div>
+            <div>
+              <span>
+                <FaCar />
+              </span>
+              <span>자가용</span>
+            </div>
             <p>
               경부고속도로 판교IC(톨게이트) 차출 후 좌회전, 약 700m 직진하여
               사거리에서 우회전 (SK 주유소 뒤)

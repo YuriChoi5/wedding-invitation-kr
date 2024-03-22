@@ -59,19 +59,22 @@ const Contact = () => {
               &times;
             </span>
             <div className="contact-box">
-              <div>부</div>
-              <div>최선우</div>
+              <span>부</span>
+              <span>최선우</span>
+              <span>
               <button onClick={() => handleCallClick(phoneNumberDad)}>
                 <VscCallOutgoing />
               </button>
+              </span>
             </div>
             <div className="contact-box">
-              <div>모</div>
-              <div>김신영</div>
-
+              <span>모</span>
+              <span>김신영</span>
+              <span>
               <button onClick={() => handleCallClick(phoneNumberMom)}>
                 <VscCallOutgoing />
               </button>
+              </span>
             </div>
           </div>
         </div>
