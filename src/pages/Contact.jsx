@@ -1,7 +1,11 @@
 import { useState } from "react";
 import "./Contact.css";
+import { VscCallOutgoing } from "react-icons/vsc";
 
 const Contact = () => {
+  const phoneNumberMom = process.env.REACT_APP_PHONE_NUMBER_MOM;
+  const phoneNumberDad = process.env.REACT_APP_PHONE_NUMBER_DAD;
+
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const handleContactClick = () => {
@@ -16,6 +20,10 @@ const Contact = () => {
     if (e.target.classList.contains("modal-overlay")) {
       handleCloseModal();
     }
+  };
+
+  const handleCallClick = (number) => {
+    window.location.href = `tel:${number}`;
   };
 
   return (
@@ -45,22 +53,26 @@ const Contact = () => {
       {isModalVisible && (
         <div className="modal-overlay" onClick={handleOverlayClick}>
           <div className="modal-content">
-          <h2>신부측 혼주</h2>
+            <h2>신부측 혼주</h2>
 
             <span className="modal-close" onClick={handleCloseModal}>
               &times;
             </span>
-            <div className='contact-box'>
+            <div className="contact-box">
               <div>부</div>
               <div>최선우</div>
-              <div>연락하기</div>
+              <button onClick={() => handleCallClick(phoneNumberDad)}>
+                <VscCallOutgoing />
+              </button>
             </div>
-            <div className='contact-box'>
+            <div className="contact-box">
               <div>모</div>
               <div>김신영</div>
-              <div>연락하기</div>
+
+              <button onClick={() => handleCallClick(phoneNumberMom)}>
+                <VscCallOutgoing />
+              </button>
             </div>
-            
           </div>
         </div>
       )}

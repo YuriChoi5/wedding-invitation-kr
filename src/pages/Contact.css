@@ -48,9 +48,10 @@
 
 .modal-content {
   background: #fff;
-  padding: 20px;
+  padding: .2rem;
   border-radius: 8px;
-  width: 250px;
+  width: 15rem;
+  height: 15rem;
   text-align: center;
   position: relative;
 }
@@ -69,5 +70,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.3rem 2rem;
+}
+
+.contact-box > div:first-child {
+  background-color: rgb(34, 75, 61);
+  padding: .5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
