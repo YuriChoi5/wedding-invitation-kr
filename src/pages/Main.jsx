@@ -1,12 +1,12 @@
 import React from "react";
 import "./Main.css";
 
-const Main = () => {
+const Main = ({image}) => {
   return (
     <div className="main-component">
       <div className="main-name">DMITRY &#10022; YURI</div>
       <img
-        src="/main.jpg"
+        src={image}
         alt="wedding"
         className="main-img"
         width="92%"

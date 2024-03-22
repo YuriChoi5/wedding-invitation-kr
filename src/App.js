@@ -27,7 +27,7 @@ function App() {
   
   return (
     <div className="App">
-      <Main />
+      <Main image={image6}/>
       <Greeting />
       {/* <Contact  /> */}
       <Calendar />  
