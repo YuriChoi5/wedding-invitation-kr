@@ -38,13 +38,13 @@
 //             <img src={image} alt={`slide ${index}`} />
 //           </div>
 //         ))}
-//         <button className="prev" onClick={prevSlide}>
-//           &#10094;
-//         </button>
-//         <button className="next" onClick={nextSlide}>
-//           &#10095;
-//         </button>
 //       </div>
+//       <button className="prev" onClick={prevSlide}>
+//         &#10094;
+//       </button>
+//       <button className="next" onClick={nextSlide}>
+//         &#10095;
+//       </button>
 //       <div className="indicators">
 //         {images.map((_, index) => (
 //           <span
@@ -65,6 +65,7 @@ import React, { useState } from 'react';
 import './PhotoSlider.css'; // Import CSS for styling
 
 const PhotoSlider = ({ images }) => {
+  const [startX, setStartX] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -83,8 +84,27 @@ const PhotoSlider = ({ images }) => {
     setCurrentIndex(index);
   };
 
+  const handleTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    const currentX = e.touches[0].clientX;
+    const difference = startX - currentX;
+
+    if (difference > 50) {
+      nextSlide();
+    } else if (difference < -50) {
+      prevSlide();
+    }
+  };
+
   return (
-    <div className="slider-container">
+    <div
+      className="slider-container"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+    >
       <div className="slider-wrapper">
         {images.map((image, index) => (
           <div
@@ -122,3 +142,10 @@ const PhotoSlider = ({ images }) => {
 };
 
 export default PhotoSlider;
+
+
+
+
+
+
+
