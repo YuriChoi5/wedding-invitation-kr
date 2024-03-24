@@ -53,11 +53,13 @@ const Contact = () => {
       {isModalVisible && (
         <div className="modal-overlay" onClick={handleOverlayClick}>
           <div className="modal-content">
+            <div>
             <h2>신부측 혼주</h2>
 
             <span className="modal-close" onClick={handleCloseModal}>
               &times;
             </span>
+            </div>
             <div className="contact-box">
               <span>부</span>
               <span>최선우</span>

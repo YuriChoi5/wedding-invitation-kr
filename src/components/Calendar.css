@@ -23,7 +23,7 @@
   }
   
   td {
-    padding: 1rem .5rem;
+    padding: .5rem .3rem;
     text-align: center;
     color: #213e0b;
   }
@@ -33,16 +33,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .2rem;
+    padding: .6rem;
     border-radius: 50%;
     width: .5rem;
     height: .5rem;
     margin: 0 auto;
+
   }
   
   .first-day {
     background: #91a8a145;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   
   .first-day .time-text {

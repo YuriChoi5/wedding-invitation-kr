@@ -1,37 +1,65 @@
 .venue-container {
-  padding: 5rem 3rem;
-  /* background-color: rgb(246, 247, 245); */
+  padding: 5rem 2rem;
   background-color: rgb(246, 247, 245);
 
 }
 
 .venue-container h1 {
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 }
 
 .address {
-  padding: 0 2rem;
+  padding-bottom: 5rem;
   font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.address button {
+.address-button {
   padding: 0.5rem 1rem;
-  margin-bottom: 5rem;
-  border: 2px solid whitesmoke;
-  background-color: whitesmoke;
+  background-color: #91a8a138;
+  border: transparent;
   color: rgb(1, 58, 39);
   font-size: 1.1rem;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Gowun Batang", serif;
 
 }
+
+.tooltip {
+  background-color: #333;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 999;
+  pointer-events: none;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tooltip.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 .contact {
+  padding: 0.4rem;
 }
+
 
 .contact > button {
   border: none;
   background-color: transparent;
+  padding: 0 0 0 .4rem;
 }
 
 .directions {
@@ -46,13 +74,12 @@
 .directions li {
   margin-bottom: 20px;
   padding-left: 10px;
-  /* display: flex; */
 }
 
 li div {
   display: flex;
   border-bottom: 2px solid rgb(1 58 39 / 44%);
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
   padding-left: 0.8rem;
   font-size: 1.3rem;
   font-weight: bold;
@@ -61,4 +88,19 @@ li div {
 li p {
   text-align: start;
   padding: 0.8rem;
+  margin: 0;
 }
+
+.trans-icon {
+  margin-right: 1rem;
+}
+
+.train-line {
+  margin-left: .6rem;
+  color: rgb(243, 235, 235);
+  background-color: #9f1414;
+  padding: .3rem .5rem;
+  border-radius: 50px;
+  font-size: .9rem;
+}
+

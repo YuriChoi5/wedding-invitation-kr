@@ -15,3 +15,8 @@ h1 {
   font-size: 1.3rem;
   color: rgb(1, 58, 39);
 }
+
+/* Prevent blue highlight on touch */
+.touch-no-highlight {
+  -webkit-tap-highlight-color: transparent; 
+}

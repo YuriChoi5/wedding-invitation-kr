@@ -1,4 +1,15 @@
 .dropdown {
-  background-color: rgb(246, 247, 245);
   border: 1px solid red;
+  padding: 1rem 2rem;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(1, 58, 39);
+  
 }
