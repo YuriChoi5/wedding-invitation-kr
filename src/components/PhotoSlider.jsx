@@ -62,7 +62,7 @@
 
 
 import React, { useState } from 'react';
-import './PhotoSlider.css'; // Import CSS for styling
+import './PhotoSlider.css'; 
 
 const PhotoSlider = ({ images }) => {
   const [startX, setStartX] = useState(null);

@@ -9,6 +9,8 @@ body {
   /* background-color: rgb(244, 245, 195); */
 
   -webkit-tap-highlight-color: transparent; 
+
+  overflow-x: hidden;
 }
 
 h1 {
@@ -16,3 +18,13 @@ h1 {
   color: rgb(1, 58, 39);
 }
 
+
+footer {
+  background-color: rgb(1, 58, 39);
+  color: whitesmoke;
+  font-size: .9rem;
+  padding: .1rem 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}

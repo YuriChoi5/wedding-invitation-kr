@@ -7,18 +7,6 @@ const Bank = () => {
   const BankMom = process.env.REACT_APP_BANK_MOM;
   const BankDad = process.env.REACT_APP_BANK_DAD;
 
-  // const [copied, setCopied] = useState(false);
-
-  // const handleCopyClick = (bank) => {
-  //   navigator.clipboard.writeText(bank);
-  //   setCopied(true);
-  //       setTimeout(() => {
-  //         setCopied(false);
-  //       }, 1000); 
-    
-  // };
-
-
   const [tooltipBride, setTooltipBride] = useState(false);
   const [tooltipMom, setTooltipMom] = useState(false);
   const [tooltipDad, setTooltipDad] = useState(false);
@@ -35,14 +23,12 @@ const Bank = () => {
     <div className="bank">
       <Dropdown title="마음 전하실 곳" children="erererr">
         <div className="account">
-          <div>
+          <div className='first-account'>
             <span>신부</span>
             <span>최유리</span>
           </div>
           <div>{`국민은행 ${BankBride}`}</div>
-          {/* <button onClick={() => handleCopyClick(BankBride)}>
-            계좌번호 복사
-          </button> */}
+        
           <button onClick={() => handleCopyClick(BankBride, setTooltipBride)}>
             계좌번호 복사
           </button>
@@ -56,9 +42,7 @@ const Bank = () => {
             <span>최선우</span>
           </div>
           <div>{`신한은행 ${BankDad}`}</div>
-          {/* <button onClick={() => handleCopyClick(BankDad)}>
-            계좌번호 복사
-          </button> */}
+          
 
           <button onClick={() => handleCopyClick(BankDad, setTooltipDad)}>
             계좌번호 복사
@@ -74,9 +58,7 @@ const Bank = () => {
           </div>
 
           <div>{`국민은행 ${BankMom}`}</div>
-          {/* <button onClick={() => handleCopyClick(BankMom)}>
-            계좌번호 복사
-          </button> */}
+          
           <button onClick={() => handleCopyClick(BankMom, setTooltipMom)}>
             계좌번호 복사
           </button>
