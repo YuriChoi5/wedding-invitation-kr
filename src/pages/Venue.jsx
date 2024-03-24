@@ -1,11 +1,10 @@
-
 import React, { useState } from "react";
 import "./Venue.css";
 import { VscCallOutgoing } from "react-icons/vsc";
 import { FaTrainSubway } from "react-icons/fa6";
 import { FaBusAlt } from "react-icons/fa";
 import { FaCar } from "react-icons/fa6";
-
+import KakaoMap from "../components/KakaoMap";
 
 const Venue = () => {
   const phoneNumber = "0317030116";
@@ -24,20 +23,18 @@ const Venue = () => {
   // };
 
   const handleCopyClick = () => {
-    navigator.clipboard.writeText("경기도 성남시 분당구 판교역로 226번길 16")
-      
-        setCopied(true);
-        setTimeout(() => {
-          setCopied(false);
-        }, 1000); 
-    
-    
+    navigator.clipboard.writeText("경기도 성남시 분당구 판교역로 226번길 16");
+
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 1000);
   };
-  
 
   return (
     <div className="venue-container">
       <h1>오시는길</h1>
+
 
       <div className="address">
         경기도 성남시 분당구 판교역로 226번길 16
@@ -47,23 +44,28 @@ const Venue = () => {
             <VscCallOutgoing />
           </button>
         </div>
-        <button className='address-button' onClick={handleCopyClick}>주소 복사</button>
+        <button className="address-button" onClick={handleCopyClick}>
+          주소 복사
+        </button>
         {/* {copied && <span className="copied-notification">주소가 복사되었습니다.</span>} */}
         <span className={`tooltip ${copied ? "show" : ""}`}>
           주소가 복사되었습니다.
         </span>
       </div>
 
+
+      <KakaoMap />
+
       {/* Directions section */}
       <div className="directions">
         <ul>
           <li>
             <div>
-              <span className='trans-icon'>
+              <span className="trans-icon">
                 <FaTrainSubway />
               </span>
               <span>지하철</span>
-              <span className='train-line'>신분당선</span>
+              <span className="train-line">신분당선</span>
             </div>
             <p>
               판교역 1번 출구 직도보 6분 소요
@@ -74,7 +76,7 @@ const Venue = () => {
 
           <li>
             <div>
-              <span className='trans-icon'>
+              <span className="trans-icon">
                 <FaBusAlt />
               </span>
               <span>버스</span>
@@ -90,7 +92,7 @@ const Venue = () => {
 
           <li>
             <div>
-              <span className='trans-icon'>
+              <span className="trans-icon">
                 <FaCar />
               </span>
               <span>자가용</span>

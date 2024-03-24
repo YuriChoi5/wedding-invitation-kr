@@ -1,0 +1,19 @@
+.wrap-map {
+    height: 15rem;
+    margin-bottom: 5rem;
+    padding: 0;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.navi-link {
+    text-decoration: none;
+    color: #2d4f44;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
