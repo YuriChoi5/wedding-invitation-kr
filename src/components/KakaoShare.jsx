@@ -24,8 +24,8 @@ export default function KakaoShare() {
             './greeting.jpg',
           link: {
             // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
-            mobileWebUrl: 'https://yurichoi5.github.io/wedding-invitation-kr/',
-            webUrl: 'https://yurichoi5.github.io/wedding-invitation-kr/',
+            mobileWebUrl: 'https://yurichoi5.github.io',
+            webUrl: 'https://yurichoi5.github.io/',
           },
         },
         
