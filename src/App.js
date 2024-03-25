@@ -2,11 +2,10 @@ import "./App.css";
 import Calendar from "./components/Calendar";
 import PhotoSlider from "./components/PhotoSlider";
 import Bank from "./pages/Bank";
-// import Contact from "./pages/Contact";
-// import Gallery from "./pages/Gallery";
 import Greeting from "./pages/Greeting";
 import Main from "./pages/Main";
 import Venue from "./pages/Venue";
+
 
 const image1 = process.env.PUBLIC_URL + "/together_black.jpg";
 const image2 = process.env.PUBLIC_URL + "/yuri_black.jpg";
@@ -35,10 +34,7 @@ function App() {
     <div className="App">
       <Main image={image6} />
       <Greeting />
-      {/* <Contact  /> */}
       <Calendar />
-
-      {/* <Gallery /> */}
       <PhotoSlider images={images} />
       <Venue />
       <Bank />
