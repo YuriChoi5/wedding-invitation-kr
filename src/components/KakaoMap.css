@@ -1,6 +1,6 @@
 .wrap-map {
     height: 15rem;
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
     padding: 0;
 }
 
@@ -15,5 +15,6 @@
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
+    padding-top: .5rem;
 }
 

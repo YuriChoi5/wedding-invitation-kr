@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "../components/Dropdown";
 import "./Bank.css";
+import { FaHandHoldingHeart } from "react-icons/fa";
 
 const Bank = () => {
   const BankBride = process.env.REACT_APP_BANK_BRIDE;
@@ -21,6 +22,7 @@ const Bank = () => {
 
   return (
     <div className="bank">
+      <div className='bank-icon'><FaHandHoldingHeart /></div>
       <Dropdown title="마음 전하실 곳" children="erererr">
         <div className="account">
           <div className='first-account'>

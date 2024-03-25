@@ -1,6 +1,6 @@
 .bank {
   background-color: rgb(246, 247, 245);
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 
 div.account {
@@ -59,4 +59,10 @@ div.account {
 
 .tooltip-bank.show {
   opacity: 1;
+}
+
+.bank-icon {
+  font-size: 2rem;
+  color: rgb(1, 58, 39);
+  margin-bottom: 1rem;
 }

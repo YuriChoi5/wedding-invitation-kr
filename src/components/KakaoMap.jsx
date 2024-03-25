@@ -1,7 +1,7 @@
 
 import { useEffect } from "react";
 import "./KakaoMap.css";
-import { FaLocationArrow } from "react-icons/fa";
+import { MdDoubleArrow } from "react-icons/md";
 
 const KakaoMap = () => {
 
@@ -49,7 +49,7 @@ const KakaoMap = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <span>카카오 길찾기</span><span><FaLocationArrow /></span>
+        <span>카카오 길찾기</span><span><MdDoubleArrow /></span>
       </a>
     </div>
   );

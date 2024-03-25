@@ -2,6 +2,7 @@ import React from "react";
 import "./Greeting.css";
 import Contact from "../pages/Contact";
 
+
 const Greeting = () => {
   return (
     <div className="greeting">

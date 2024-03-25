@@ -18,17 +18,17 @@
 }
 
 .slide {
-  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  transition: opacity 0.5s ease; /* 트랜지션을 추가하여 이미지 전환을 부드럽게 설정 */
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .active {
-  display: block;
+  opacity: 1;
 }
 
 .prev,
@@ -41,15 +41,16 @@
   cursor: pointer;
   font-size: 1.5rem;
   z-index: 2;
-  transition: opacity 0.5s ease; /* 트랜지션을 추가하여 화살표 전환을 부드럽게 설정 */
 }
 
 .prev {
   left: 0;
+  margin-left: .5rem;
 }
 
 .next {
   right: 0;
+  margin-right: .5rem;
 }
 
 .indicators {
@@ -65,14 +66,12 @@
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
-  transition: background-color 0.5s ease; /* 트랜지션을 추가하여 인디케이터 전환을 부드럽게 설정 */
 }
 
 .indicator.active {
   background-color: #717171;
 }
 
-/* Style the images to ensure they fill their container */
 .slide img {
   width: 100%;
   height: 100%;
