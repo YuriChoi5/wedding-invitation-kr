@@ -1,6 +1,5 @@
 import "./App.css";
 import Calendar from "./components/Calendar";
-import KakaoShare from "./components/KakaoShare";
 import PhotoSlider from "./components/PhotoSlider";
 import Bank from "./pages/Bank";
 import Greeting from "./pages/Greeting";
@@ -39,7 +38,6 @@ function App() {
       <PhotoSlider images={images} />
       <Venue />
       <Bank />
-      <KakaoShare />
       <footer>
         <p>&copy; 2024 Yuri Choi. All rights reserved.</p>
       </footer>
